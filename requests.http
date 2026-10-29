@@ -1,0 +1,20 @@
+### Cadastrar
+POST http://localhost:8080/api/livros
+Content-Type: application/json
+
+{"titulo":"Dom Casmurro","autor":"Machado de Assis","genero":"Romance","anoPublicacao":1899,"statusLeitura":"LIDO"}
+
+### Listar
+GET http://localhost:8080/api/livros
+
+### Consultar (troque o ID)
+GET http://localhost:8080/api/livros/1
+
+### Atualizar (troque o ID)
+PUT http://localhost:8080/api/livros/1
+Content-Type: application/json
+
+{"titulo":"Dom Casmurro","autor":"Machado de Assis","genero":"Romance","anoPublicacao":1899,"statusLeitura":"LENDO"}
+
+### Excluir (troque o ID)
+DELETE http://localhost:8080/api/livros/1
